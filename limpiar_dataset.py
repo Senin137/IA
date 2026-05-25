@@ -6,8 +6,8 @@ from pathlib import Path
 # ──────────────────────────────────────────────
 #  CONFIGURACIÓN
 # ──────────────────────────────────────────────
-INPUT_DIR  = "./dataset/ballena"
-OUTPUT_DIR = "./dataset/ballena_limpia"
+INPUT_DIR  = "./dataset/rana"
+OUTPUT_DIR = "./dataset/rana_limpia"
 
 BLUR_THRESHOLD      = 100    # Varianza del Laplaciano; menor = más borroso
 DUPLICATE_THRESHOLD = 5      # Diferencia media de píxeles; menor = más estricto
