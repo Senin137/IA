@@ -1,0 +1,267 @@
+{
+  "documentos": [
+    {
+      "archivo": "0188-252X-comso-26-00013.pdf",
+      "tipo": "pdf",
+      "paginas": 30,
+      "chunks": 33,
+      "palabras": 9623
+    },
+    {
+      "archivo": "04+Saenz_pamp.pdf",
+      "tipo": "pdf",
+      "paginas": 39,
+      "chunks": 50,
+      "palabras": 10934
+    },
+    {
+      "archivo": "083-Soria-Flores.pdf",
+      "tipo": "pdf",
+      "paginas": 33,
+      "chunks": 51,
+      "palabras": 13490
+    },
+    {
+      "archivo": "1405-0927-hg-52-57.pdf",
+      "tipo": "pdf",
+      "paginas": 39,
+      "chunks": 41,
+      "palabras": 12291
+    },
+    {
+      "archivo": "1541455707N85.pdf",
+      "tipo": "pdf",
+      "paginas": 31,
+      "chunks": 31,
+      "palabras": 6754
+    },
+    {
+      "archivo": "1575312021S66.pdf",
+      "tipo": "pdf",
+      "paginas": 31,
+      "chunks": 48,
+      "palabras": 12582
+    },
+    {
+      "archivo": "1607-4041-redie-20-02-37.pdf",
+      "tipo": "pdf",
+      "paginas": 16,
+      "chunks": 22,
+      "palabras": 5392
+    },
+    {
+      "archivo": "2007-2171-dsetaie-13-24-00003.pdf",
+      "tipo": "pdf",
+      "paginas": 35,
+      "chunks": 52,
+      "palabras": 11163
+    },
+    {
+      "archivo": "21928-Texto del artículo-97713-1-10-20260122.pdf",
+      "tipo": "pdf",
+      "paginas": 17,
+      "chunks": 17,
+      "palabras": 4444
+    },
+    {
+      "archivo": "23- 209-Montes de Oca-Zepeda-Esquivel.pdf",
+      "tipo": "pdf",
+      "paginas": 20,
+      "chunks": 29,
+      "palabras": 6912
+    },
+    {
+      "archivo": "2448-5799-conver-26-80-01.pdf",
+      "tipo": "pdf",
+      "paginas": 27,
+      "chunks": 39,
+      "palabras": 9480
+    },
+    {
+      "archivo": "2448-878X-rlee-51-02-151.pdf",
+      "tipo": "pdf",
+      "paginas": 27,
+      "chunks": 33,
+      "palabras": 9943
+    },
+    {
+      "archivo": "2501-Texto del artículo-8741-1-10-20251111.pdf",
+      "tipo": "pdf",
+      "paginas": 12,
+      "chunks": 15,
+      "palabras": 3395
+    },
+    {
+      "archivo": "3 Violencia juvenil factores de riesgo_Arturo Alvarado y Alberto Concha.pdf",
+      "tipo": "pdf",
+      "paginas": 21,
+      "chunks": 21,
+      "palabras": 1004
+    },
+    {
+      "archivo": "521665144011.pdf",
+      "tipo": "pdf",
+      "paginas": 28,
+      "chunks": 36,
+      "palabras": 7884
+    },
+    {
+      "archivo": "521676741032.pdf",
+      "tipo": "pdf",
+      "paginas": 28,
+      "chunks": 36,
+      "palabras": 8589
+    },
+    {
+      "archivo": "54048-153714-1-PB.pdf",
+      "tipo": "pdf",
+      "paginas": 19,
+      "chunks": 24,
+      "palabras": 5821
+    },
+    {
+      "archivo": "Corpus.txt",
+      "tipo": "txt",
+      "paginas": 21,
+      "chunks": 41,
+      "palabras": 11052
+    },
+    {
+      "archivo": "Dialnet-ElFeminicidioEnMexico-9054727.pdf",
+      "tipo": "pdf",
+      "paginas": 21,
+      "chunks": 30,
+      "palabras": 7284
+    },
+    {
+      "archivo": "Dialnet-LosResultadosDeLaPoliticaDeSeguridadPublicaEnLaFro-10531381.pdf",
+      "tipo": "pdf",
+      "paginas": 35,
+      "chunks": 50,
+      "palabras": 12502
+    },
+    {
+      "archivo": "Dialnet-PercepcionSocialDeLaExtorsionEnMicronegociosYSuImp-10388898.pdf",
+      "tipo": "pdf",
+      "paginas": 31,
+      "chunks": 42,
+      "palabras": 11495
+    },
+    {
+      "archivo": "Dialnet-ViolenciaEscolar-7915494.pdf",
+      "tipo": "pdf",
+      "paginas": 26,
+      "chunks": 36,
+      "palabras": 8378
+    },
+    {
+      "archivo": "Informe_Experiencias_exitosas_en_AL_2015_VF.pdf",
+      "tipo": "pdf",
+      "paginas": 228,
+      "chunks": 313,
+      "palabras": 74725
+    },
+    {
+      "archivo": "JAF2_JaliscoManana_6.pdf",
+      "tipo": "pdf",
+      "paginas": 104,
+      "chunks": 135,
+      "palabras": 35810
+    },
+    {
+      "archivo": "LA-VULNERABILIDAD-DEL-CAMPO-EN-LA-CDMX-ANTE-GRUPOS-CRIMINALES.pdf",
+      "tipo": "pdf",
+      "paginas": 54,
+      "chunks": 54,
+      "palabras": 10289
+    },
+    {
+      "archivo": "La_nemesis_de_Colon_Replicar_la_estatua.pdf",
+      "tipo": "pdf",
+      "paginas": 22,
+      "chunks": 30,
+      "palabras": 6794
+    },
+    {
+      "archivo": "Libro_CongresoSantiqagodelESTERO20111.pdf",
+      "tipo": "pdf",
+      "paginas": 273,
+      "chunks": 371,
+      "palabras": 84786
+    },
+    {
+      "archivo": "Revista+Constructos+Criminológicos+-+Vol+6,+Núm+10,+2026+-+Cebreros+-+P97-110.pdf",
+      "tipo": "pdf",
+      "paginas": 21,
+      "chunks": 31,
+      "palabras": 6692
+    },
+    {
+      "archivo": "Seguridad-publica-y-ciudadana-en-Jalisco-Vivirsinmiedo.pdf",
+      "tipo": "pdf",
+      "paginas": 185,
+      "chunks": 204,
+      "palabras": 56047
+    },
+    {
+      "archivo": "Violencia-asociada-al-proceso-de-acumulacion-de-capital-Expresiones-en-tres-destinos-turisticos-ACapulco-Guadalajara-y-Zacatecas.pdf",
+      "tipo": "pdf",
+      "paginas": 303,
+      "chunks": 303,
+      "palabras": 69166
+    },
+    {
+      "archivo": "Violencia2019_Coah.pdf",
+      "tipo": "pdf",
+      "paginas": 29,
+      "chunks": 34,
+      "palabras": 8801
+    },
+    {
+      "archivo": "admin,+55-220-1-CE.pdf",
+      "tipo": "pdf",
+      "paginas": 27,
+      "chunks": 40,
+      "palabras": 8649
+    },
+    {
+      "archivo": "ale23,+art_11+(2).pdf",
+      "tipo": "pdf",
+      "paginas": 23,
+      "chunks": 32,
+      "palabras": 8923
+    },
+    {
+      "archivo": "alternativas-hacia-la-paz.pdf",
+      "tipo": "pdf",
+      "paginas": 552,
+      "chunks": 735,
+      "palabras": 200158
+    },
+    {
+      "archivo": "dossier2.pdf",
+      "tipo": "pdf",
+      "paginas": 26,
+      "chunks": 36,
+      "palabras": 10852
+    },
+    {
+      "archivo": "retos_perspectivas_agenda2030.pdf",
+      "tipo": "pdf",
+      "paginas": 308,
+      "chunks": 308,
+      "palabras": 77402
+    },
+    {
+      "archivo": "v24n47a7.pdf",
+      "tipo": "pdf",
+      "paginas": 28,
+      "chunks": 47,
+      "palabras": 12473
+    }
+  ],
+  "embedding_backend": "ollama/nomic-embed-text",
+  "embedding_dim": 768,
+  "total_chunks": 3450,
+  "total_palabras": 861979
+}
