@@ -1,0 +1,63 @@
+{
+    "name": "kz-rnn-autocomplete-c",
+    "displayName": "KZ RNN Autocomplete C",
+    "description": "Autocompletado de código C usando una RNN Vanilla entrenada con funciones kz_.",
+    "version": "1.0.0",
+    "engines": {
+        "vscode": "^1.85.0"
+    },
+    "categories": [
+        "Other"
+    ],
+    "activationEvents": [
+        "onLanguage:c",
+        "onCommand:kzRnnAutocomplete.autocompletar"
+    ],
+    "main": "./extension.js",
+    "contributes": {
+        "commands": [
+            {
+                "command": "kzRnnAutocomplete.autocompletar",
+                "title": "KZ RNN: Autocompletar código C"
+            }
+        ],
+        "keybindings": [
+            {
+                "command": "kzRnnAutocomplete.autocompletar",
+                "key": "ctrl+alt+space",
+                "when": "editorTextFocus && editorLangId == c"
+            }
+        ],
+        "menus": {
+            "editor/context": [
+                {
+                    "command": "kzRnnAutocomplete.autocompletar",
+                    "group": "1_modification"
+                }
+            ]
+        },
+        "configuration": {
+            "title": "KZ RNN Autocomplete",
+            "properties": {
+                "kzRnnAutocomplete.apiUrl": {
+                    "type": "string",
+                    "default": "http://127.0.0.1:5000/autocompletar",
+                    "description": "URL de la API local de autocompletado."
+                },
+                "kzRnnAutocomplete.maxTokens": {
+                    "type": "number",
+                    "default": 500,
+                    "minimum": 50,
+                    "maximum": 1000,
+                    "description": "Cantidad máxima de caracteres a generar."
+                }
+            }
+        }
+    },
+    "scripts": {
+        "vscode:prepublish": "echo Sin compilacion necesaria"
+    },
+    "devDependencies": {
+        "@types/vscode": "^1.85.0"
+    }
+}

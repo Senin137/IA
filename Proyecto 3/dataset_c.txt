@@ -1,0 +1,787 @@
+int kz_sumar_enteros(int a, int b) {
+    int resultado = a + b;
+    return resultado;
+}
+
+int kz_restar_enteros(int a, int b) {
+    int resultado = a - b;
+    return resultado;
+}
+
+int kz_multiplicar_enteros(int a, int b) {
+    int resultado = a * b;
+    return resultado;
+}
+
+int kz_dividir_enteros(int a, int b) {
+    if (b == 0) {
+        return 0;
+    }
+    int resultado = a / b;
+    return resultado;
+}
+
+int kz_calcular_residuo(int a, int b) {
+    if (b == 0) {
+        return 0;
+    }
+    int resultado = a % b;
+    return resultado;
+}
+
+int kz_calcular_cuadrado(int numero) {
+    int resultado = numero * numero;
+    return resultado;
+}
+
+int kz_calcular_cubo(int numero) {
+    int resultado = numero * numero * numero;
+    return resultado;
+}
+
+int kz_es_par(int numero) {
+    if (numero % 2 == 0) {
+        return 1;
+    }
+    return 0;
+}
+
+int kz_es_impar(int numero) {
+    if (numero % 2 != 0) {
+        return 1;
+    }
+    return 0;
+}
+
+int kz_es_positivo(int numero) {
+    if (numero > 0) {
+        return 1;
+    }
+    return 0;
+}
+
+int kz_es_negativo(int numero) {
+    if (numero < 0) {
+        return 1;
+    }
+    return 0;
+}
+
+int kz_es_cero(int numero) {
+    if (numero == 0) {
+        return 1;
+    }
+    return 0;
+}
+
+int kz_obtener_mayor(int a, int b) {
+    if (a > b) {
+        return a;
+    }
+    return b;
+}
+
+int kz_obtener_menor(int a, int b) {
+    if (a < b) {
+        return a;
+    }
+    return b;
+}
+
+int kz_obtener_absoluto(int numero) {
+    if (numero < 0) {
+        return -numero;
+    }
+    return numero;
+}
+
+int kz_limitar_valor(int numero, int minimo, int maximo) {
+    if (numero < minimo) {
+        return minimo;
+    }
+    if (numero > maximo) {
+        return maximo;
+    }
+    return numero;
+}
+
+int kz_calcular_factorial(int numero) {
+    if (numero < 0) {
+        return 0;
+    }
+    int resultado = 1;
+    for (int i = 1; i <= numero; i++) {
+        resultado = resultado * i;
+    }
+    return resultado;
+}
+
+int kz_calcular_potencia(int base, int exponente) {
+    if (exponente < 0) {
+        return 0;
+    }
+    int resultado = 1;
+    for (int i = 0; i < exponente; i++) {
+        resultado = resultado * base;
+    }
+    return resultado;
+}
+
+int kz_sumar_rango(int inicio, int fin) {
+    int suma = 0;
+    for (int i = inicio; i <= fin; i++) {
+        suma = suma + i;
+    }
+    return suma;
+}
+
+int kz_calcular_mcd(int a, int b) {
+    while (b != 0) {
+        int temporal = b;
+        b = a % b;
+        a = temporal;
+    }
+    return a;
+}
+
+int kz_calcular_mcm(int a, int b) {
+    int mcd = kz_calcular_mcd(a, b);
+    int resultado = (a / mcd) * b;
+    return resultado;
+}
+
+int kz_es_primo(int numero) {
+    if (numero < 2) {
+        return 0;
+    }
+    for (int i = 2; i * i <= numero; i++) {
+        if (numero % i == 0) {
+            return 0;
+        }
+    }
+    return 1;
+}
+
+int kz_es_bisiesto(int anio) {
+    if (anio % 400 == 0) {
+        return 1;
+    }
+    if (anio % 100 == 0) {
+        return 0;
+    }
+    if (anio % 4 == 0) {
+        return 1;
+    }
+    return 0;
+}
+
+int kz_contar_digitos(int numero) {
+    if (numero == 0) {
+        return 1;
+    }
+    if (numero < 0) {
+        numero = -numero;
+    }
+    int contador = 0;
+    while (numero > 0) {
+        numero = numero / 10;
+        contador++;
+    }
+    return contador;
+}
+
+int kz_sumar_digitos(int numero) {
+    if (numero < 0) {
+        numero = -numero;
+    }
+    int suma = 0;
+    while (numero > 0) {
+        suma = suma + (numero % 10);
+        numero = numero / 10;
+    }
+    return suma;
+}
+
+int kz_invertir_numero(int numero) {
+    int invertido = 0;
+    while (numero > 0) {
+        invertido = invertido * 10 + (numero % 10);
+        numero = numero / 10;
+    }
+    return invertido;
+}
+
+int kz_es_palindromo_numero(int numero) {
+    int invertido = kz_invertir_numero(numero);
+    if (numero == invertido) {
+        return 1;
+    }
+    return 0;
+}
+
+int kz_fibonacci(int n) {
+    if (n <= 0) {
+        return 0;
+    }
+    if (n == 1) {
+        return 1;
+    }
+    int a = 0;
+    int b = 1;
+    for (int i = 2; i <= n; i++) {
+        int temporal = a + b;
+        a = b;
+        b = temporal;
+    }
+    return b;
+}
+
+float kz_calcular_promedio_dos(float a, float b) {
+    float resultado = (a + b) / 2.0f;
+    return resultado;
+}
+
+float kz_calcular_area_circulo(float radio) {
+    float resultado = 3.1416f * radio * radio;
+    return resultado;
+}
+
+float kz_calcular_perimetro_circulo(float radio) {
+    float resultado = 2.0f * 3.1416f * radio;
+    return resultado;
+}
+
+float kz_calcular_area_rectangulo(float base, float altura) {
+    float resultado = base * altura;
+    return resultado;
+}
+
+float kz_calcular_perimetro_rectangulo(float base, float altura) {
+    float resultado = 2.0f * (base + altura);
+    return resultado;
+}
+
+float kz_calcular_area_triangulo(float base, float altura) {
+    float resultado = (base * altura) / 2.0f;
+    return resultado;
+}
+
+float kz_calcular_descuento(float precio, float porcentaje) {
+    float descuento = precio * porcentaje / 100.0f;
+    float resultado = precio - descuento;
+    return resultado;
+}
+
+float kz_convertir_celsius_fahrenheit(float celsius) {
+    float resultado = (celsius * 9.0f / 5.0f) + 32.0f;
+    return resultado;
+}
+
+float kz_convertir_fahrenheit_celsius(float fahrenheit) {
+    float resultado = (fahrenheit - 32.0f) * 5.0f / 9.0f;
+    return resultado;
+}
+
+int kz_sumar_arreglo(int arreglo[], int tamanio) {
+    int suma = 0;
+    for (int i = 0; i < tamanio; i++) {
+        suma = suma + arreglo[i];
+    }
+    return suma;
+}
+
+int kz_producto_arreglo(int arreglo[], int tamanio) {
+    if (tamanio <= 0) {
+        return 0;
+    }
+    int producto = 1;
+    for (int i = 0; i < tamanio; i++) {
+        producto = producto * arreglo[i];
+    }
+    return producto;
+}
+
+int kz_buscar_maximo_arreglo(int arreglo[], int tamanio) {
+    if (tamanio <= 0) {
+        return 0;
+    }
+    int maximo = arreglo[0];
+    for (int i = 1; i < tamanio; i++) {
+        if (arreglo[i] > maximo) {
+            maximo = arreglo[i];
+        }
+    }
+    return maximo;
+}
+
+int kz_buscar_minimo_arreglo(int arreglo[], int tamanio) {
+    if (tamanio <= 0) {
+        return 0;
+    }
+    int minimo = arreglo[0];
+    for (int i = 1; i < tamanio; i++) {
+        if (arreglo[i] < minimo) {
+            minimo = arreglo[i];
+        }
+    }
+    return minimo;
+}
+
+float kz_promedio_arreglo(int arreglo[], int tamanio) {
+    if (tamanio <= 0) {
+        return 0.0f;
+    }
+    int suma = 0;
+    for (int i = 0; i < tamanio; i++) {
+        suma = suma + arreglo[i];
+    }
+    float resultado = (float)suma / (float)tamanio;
+    return resultado;
+}
+
+int kz_buscar_valor_arreglo(int arreglo[], int tamanio, int valor) {
+    for (int i = 0; i < tamanio; i++) {
+        if (arreglo[i] == valor) {
+            return i;
+        }
+    }
+    return -1;
+}
+
+void kz_copiar_arreglo(int origen[], int destino[], int tamanio) {
+    for (int i = 0; i < tamanio; i++) {
+        destino[i] = origen[i];
+    }
+}
+
+void kz_invertir_arreglo(int arreglo[], int tamanio) {
+    for (int i = 0; i < tamanio / 2; i++) {
+        int temporal = arreglo[i];
+        arreglo[i] = arreglo[tamanio - 1 - i];
+        arreglo[tamanio - 1 - i] = temporal;
+    }
+}
+
+int kz_es_arreglo_ordenado(int arreglo[], int tamanio) {
+    for (int i = 1; i < tamanio; i++) {
+        if (arreglo[i] < arreglo[i - 1]) {
+            return 0;
+        }
+    }
+    return 1;
+}
+
+void kz_reemplazar_valor_arreglo(int arreglo[], int tamanio, int original, int nuevo) {
+    for (int i = 0; i < tamanio; i++) {
+        if (arreglo[i] == original) {
+            arreglo[i] = nuevo;
+        }
+    }
+}
+
+void kz_llenar_arreglo(int arreglo[], int tamanio, int valor) {
+    for (int i = 0; i < tamanio; i++) {
+        arreglo[i] = valor;
+    }
+}
+
+void kz_generar_secuencia_arreglo(int arreglo[], int tamanio, int inicio) {
+    for (int i = 0; i < tamanio; i++) {
+        arreglo[i] = inicio + i;
+    }
+}
+
+int kz_contar_pares_arreglo(int arreglo[], int tamanio) {
+    int contador = 0;
+    for (int i = 0; i < tamanio; i++) {
+        if (arreglo[i] % 2 == 0) {
+            contador++;
+        }
+    }
+    return contador;
+}
+
+int kz_contar_impares_arreglo(int arreglo[], int tamanio) {
+    int contador = 0;
+    for (int i = 0; i < tamanio; i++) {
+        if (arreglo[i] % 2 != 0) {
+            contador++;
+        }
+    }
+    return contador;
+}
+
+int kz_contar_positivos_arreglo(int arreglo[], int tamanio) {
+    int contador = 0;
+    for (int i = 0; i < tamanio; i++) {
+        if (arreglo[i] > 0) {
+            contador++;
+        }
+    }
+    return contador;
+}
+
+int kz_contar_negativos_arreglo(int arreglo[], int tamanio) {
+    int contador = 0;
+    for (int i = 0; i < tamanio; i++) {
+        if (arreglo[i] < 0) {
+            contador++;
+        }
+    }
+    return contador;
+}
+
+void kz_rotar_arreglo_derecha(int arreglo[], int tamanio) {
+    if (tamanio <= 1) {
+        return;
+    }
+    int ultimo = arreglo[tamanio - 1];
+    for (int i = tamanio - 1; i > 0; i--) {
+        arreglo[i] = arreglo[i - 1];
+    }
+    arreglo[0] = ultimo;
+}
+
+void kz_rotar_arreglo_izquierda(int arreglo[], int tamanio) {
+    if (tamanio <= 1) {
+        return;
+    }
+    int primero = arreglo[0];
+    for (int i = 0; i < tamanio - 1; i++) {
+        arreglo[i] = arreglo[i + 1];
+    }
+    arreglo[tamanio - 1] = primero;
+}
+
+void kz_ordenar_burbuja_arreglo(int arreglo[], int tamanio) {
+    for (int i = 0; i < tamanio - 1; i++) {
+        for (int j = 0; j < tamanio - 1 - i; j++) {
+            if (arreglo[j] > arreglo[j + 1]) {
+                int temporal = arreglo[j];
+                arreglo[j] = arreglo[j + 1];
+                arreglo[j + 1] = temporal;
+            }
+        }
+    }
+}
+
+void kz_ordenar_seleccion_arreglo(int arreglo[], int tamanio) {
+    for (int i = 0; i < tamanio - 1; i++) {
+        int idx_minimo = i;
+        for (int j = i + 1; j < tamanio; j++) {
+            if (arreglo[j] < arreglo[idx_minimo]) {
+                idx_minimo = j;
+            }
+        }
+        int temporal = arreglo[i];
+        arreglo[i] = arreglo[idx_minimo];
+        arreglo[idx_minimo] = temporal;
+    }
+}
+
+int kz_longitud_cadena(char cadena[]) {
+    int contador = 0;
+    while (cadena[contador] != '\0') {
+        contador++;
+    }
+    return contador;
+}
+
+void kz_copiar_cadena(char origen[], char destino[]) {
+    int i = 0;
+    while (origen[i] != '\0') {
+        destino[i] = origen[i];
+        i++;
+    }
+    destino[i] = '\0';
+}
+
+void kz_concatenar_cadena(char destino[], char fuente[]) {
+    int i = 0;
+    int j = 0;
+    while (destino[i] != '\0') {
+        i++;
+    }
+    while (fuente[j] != '\0') {
+        destino[i] = fuente[j];
+        i++;
+        j++;
+    }
+    destino[i] = '\0';
+}
+
+int kz_comparar_cadenas(char cadena_a[], char cadena_b[]) {
+    int i = 0;
+    while (cadena_a[i] != '\0' && cadena_b[i] != '\0') {
+        if (cadena_a[i] != cadena_b[i]) {
+            return 0;
+        }
+        i++;
+    }
+    if (cadena_a[i] == '\0' && cadena_b[i] == '\0') {
+        return 1;
+    }
+    return 0;
+}
+
+void kz_invertir_cadena(char cadena[]) {
+    int largo = kz_longitud_cadena(cadena);
+    for (int i = 0; i < largo / 2; i++) {
+        char temporal = cadena[i];
+        cadena[i] = cadena[largo - 1 - i];
+        cadena[largo - 1 - i] = temporal;
+    }
+}
+
+int kz_buscar_caracter(char cadena[], char caracter) {
+    for (int i = 0; cadena[i] != '\0'; i++) {
+        if (cadena[i] == caracter) {
+            return i;
+        }
+    }
+    return -1;
+}
+
+int kz_contar_vocales(char cadena[]) {
+    int contador = 0;
+    for (int i = 0; cadena[i] != '\0'; i++) {
+        char c = cadena[i];
+        if (c == 'a' || c == 'e' || c == 'i' || c == 'o' || c == 'u') {
+            contador++;
+        } else if (c == 'A' || c == 'E' || c == 'I' || c == 'O' || c == 'U') {
+            contador++;
+        }
+    }
+    return contador;
+}
+
+int kz_contar_consonantes(char cadena[]) {
+    int contador = 0;
+    for (int i = 0; cadena[i] != '\0'; i++) {
+        char c = cadena[i];
+        if ((c >= 'a' && c <= 'z') || (c >= 'A' && c <= 'Z')) {
+            if (c != 'a' && c != 'e' && c != 'i' && c != 'o' && c != 'u' &&
+                c != 'A' && c != 'E' && c != 'I' && c != 'O' && c != 'U') {
+                contador++;
+            }
+        }
+    }
+    return contador;
+}
+
+void kz_convertir_mayusculas(char cadena[]) {
+    for (int i = 0; cadena[i] != '\0'; i++) {
+        if (cadena[i] >= 'a' && cadena[i] <= 'z') {
+            cadena[i] = cadena[i] - 32;
+        }
+    }
+}
+
+void kz_convertir_minusculas(char cadena[]) {
+    for (int i = 0; cadena[i] != '\0'; i++) {
+        if (cadena[i] >= 'A' && cadena[i] <= 'Z') {
+            cadena[i] = cadena[i] + 32;
+        }
+    }
+}
+
+void kz_eliminar_espacios(char cadena[]) {
+    int indice = 0;
+    for (int i = 0; cadena[i] != '\0'; i++) {
+        if (cadena[i] != ' ') {
+            cadena[indice] = cadena[i];
+            indice++;
+        }
+    }
+    cadena[indice] = '\0';
+}
+
+int kz_es_palindromo(char cadena[]) {
+    int izquierda = 0;
+    int derecha = kz_longitud_cadena(cadena) - 1;
+    while (izquierda < derecha) {
+        if (cadena[izquierda] != cadena[derecha]) {
+            return 0;
+        }
+        izquierda++;
+        derecha--;
+    }
+    return 1;
+}
+
+int kz_contar_palabras(char cadena[]) {
+    int contador = 0;
+    int en_palabra = 0;
+    for (int i = 0; cadena[i] != '\0'; i++) {
+        if (cadena[i] != ' ' && en_palabra == 0) {
+            en_palabra = 1;
+            contador++;
+        } else if (cadena[i] == ' ') {
+            en_palabra = 0;
+        }
+    }
+    return contador;
+}
+
+int kz_tiene_solo_numeros(char cadena[]) {
+    if (cadena[0] == '\0') {
+        return 0;
+    }
+    for (int i = 0; cadena[i] != '\0'; i++) {
+        if (cadena[i] < '0' || cadena[i] > '9') {
+            return 0;
+        }
+    }
+    return 1;
+}
+
+int kz_tiene_solo_letras(char cadena[]) {
+    if (cadena[0] == '\0') {
+        return 0;
+    }
+    for (int i = 0; cadena[i] != '\0'; i++) {
+        if (!((cadena[i] >= 'a' && cadena[i] <= 'z') ||
+              (cadena[i] >= 'A' && cadena[i] <= 'Z'))) {
+            return 0;
+        }
+    }
+    return 1;
+}
+
+void kz_capitalizar_primera_letra(char cadena[]) {
+    if (cadena[0] >= 'a' && cadena[0] <= 'z') {
+        cadena[0] = cadena[0] - 32;
+    }
+}
+
+int kz_contar_caracter(char cadena[], char caracter) {
+    int contador = 0;
+    for (int i = 0; cadena[i] != '\0'; i++) {
+        if (cadena[i] == caracter) {
+            contador++;
+        }
+    }
+    return contador;
+}
+
+void kz_reemplazar_caracter(char cadena[], char original, char nuevo) {
+    for (int i = 0; cadena[i] != '\0'; i++) {
+        if (cadena[i] == original) {
+            cadena[i] = nuevo;
+        }
+    }
+}
+
+void kz_eliminar_vocales(char cadena[]) {
+    int indice = 0;
+    for (int i = 0; cadena[i] != '\0'; i++) {
+        char c = cadena[i];
+        if (c != 'a' && c != 'e' && c != 'i' && c != 'o' && c != 'u' &&
+            c != 'A' && c != 'E' && c != 'I' && c != 'O' && c != 'U') {
+            cadena[indice] = cadena[i];
+            indice++;
+        }
+    }
+    cadena[indice] = '\0';
+}
+
+void kz_copiar_subcadena(char origen[], char destino[], int inicio, int fin) {
+    int indice = 0;
+    for (int i = inicio; i <= fin && origen[i] != '\0'; i++) {
+        destino[indice] = origen[i];
+        indice++;
+    }
+    destino[indice] = '\0';
+}
+
+void kz_intercambiar_valores(int* a, int* b) {
+    int temporal = *a;
+    *a = *b;
+    *b = temporal;
+}
+
+void kz_ordenar_tres_numeros(int* a, int* b, int* c) {
+    if (*a > *b) {
+        kz_intercambiar_valores(a, b);
+    }
+    if (*a > *c) {
+        kz_intercambiar_valores(a, c);
+    }
+    if (*b > *c) {
+        kz_intercambiar_valores(b, c);
+    }
+}
+
+void kz_decimal_a_binario(int numero, char binario[]) {
+    int indice = 0;
+    if (numero == 0) {
+        binario[0] = '0';
+        binario[1] = '\0';
+        return;
+    }
+    while (numero > 0) {
+        binario[indice] = (numero % 2) + '0';
+        numero = numero / 2;
+        indice++;
+    }
+    binario[indice] = '\0';
+    kz_invertir_cadena(binario);
+}
+
+int kz_sumar_matriz_completa(int filas, int columnas, int matriz[filas][columnas]) {
+    int suma = 0;
+    for (int i = 0; i < filas; i++) {
+        for (int j = 0; j < columnas; j++) {
+            suma = suma + matriz[i][j];
+        }
+    }
+    return suma;
+}
+
+void kz_llenar_matriz(int filas, int columnas, int matriz[filas][columnas], int valor) {
+    for (int i = 0; i < filas; i++) {
+        for (int j = 0; j < columnas; j++) {
+            matriz[i][j] = valor;
+        }
+    }
+}
+
+void kz_copiar_matriz(int filas, int columnas, int origen[filas][columnas], int destino[filas][columnas]) {
+    for (int i = 0; i < filas; i++) {
+        for (int j = 0; j < columnas; j++) {
+            destino[i][j] = origen[i][j];
+        }
+    }
+}
+
+void kz_transponer_matriz(int filas, int columnas, int original[filas][columnas], int transpuesta[columnas][filas]) {
+    for (int i = 0; i < filas; i++) {
+        for (int j = 0; j < columnas; j++) {
+            transpuesta[j][i] = original[i][j];
+        }
+    }
+}
+
+int kz_buscar_maximo_matriz(int filas, int columnas, int matriz[filas][columnas]) {
+    int maximo = matriz[0][0];
+    for (int i = 0; i < filas; i++) {
+        for (int j = 0; j < columnas; j++) {
+            if (matriz[i][j] > maximo) {
+                maximo = matriz[i][j];
+            }
+        }
+    }
+    return maximo;
+}
+
+int kz_buscar_minimo_matriz(int filas, int columnas, int matriz[filas][columnas]) {
+    int minimo = matriz[0][0];
+    for (int i = 0; i < filas; i++) {
+        for (int j = 0; j < columnas; j++) {
+            if (matriz[i][j] < minimo) {
+                minimo = matriz[i][j];
+            }
+        }
+    }
+    return minimo;
+}
